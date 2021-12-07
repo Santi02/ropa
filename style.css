@@ -1,0 +1,256 @@
+:root {
+  --blanco: #ffffff;
+  --oscuro: #031042;
+  --gris: #757575;
+  --grisClaro: #dfe9f3;
+  --azulOscuro: #02255B;
+  --rojo: #BD0519;
+}
+
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+/*Encabezado*/
+
+img.logo{
+  display: block;
+  width: 15%;
+}
+.encabezado{
+  padding-bottom: 20rem;
+  background-image: url(fondo1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  background-color: var(--azulOscuro);
+  padding-top: 0.9rem;
+
+}
+
+img.logo__2{
+height: 80%;
+}
+
+body {
+  font-size: 30px;
+ font-family: "Krub", sans-serif;
+  /*1rem=10px*/
+  background-image: linear-gradient(to top,var(--grisClaro) 0%, var(--blanco) 100%);
+}
+
+.nav-bg {
+  background-color: var(--gris);
+}
+
+.navegacion-principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15rem; 
+}
+
+.navegacion-principal a {
+  display: block;
+  text-align: center;
+  color: var(--blanco);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1.5rem;
+}
+
+.navegacion-principal a:hover {
+  background-color: var(--grisClaro);
+  color: var(--oscuro);
+}
+
+     /*Pagina principal*/
+
+
+.productos{
+  background-color: var(--oscuro);
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.grid{
+  display: grid ;
+  text-align: center;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8rem;
+  margin: 4rem;
+}
+
+@media (max-width: 768px) {
+    .grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+.producto{
+    background-image: linear-gradient(to top,var(--rojo) 0%, var(--azulOscuro) 100%);
+    padding: 1rem;
+}
+
+
+.producto__nombre,
+.producto__precio{
+    font-family: var(--fuentePrincipal);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1;
+    font-size: 80%;
+}
+    /*Nosotros*/
+.nosotros{
+    display: grid;
+    grid-template-columns:repeat(2, auto); ;
+    padding: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo__2{
+  
+margin: 3rem 0;
+
+}
+.pq__nosotros{
+  margin: 5rem;
+}
+
+.nosotros__end{
+
+      text-align:center;
+      font-family: "Krub", sans-serif;
+}
+
+
+.textoFinalNosotros{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 70%;
+    margin: 5rem;
+    column-gap: 5rem;
+}
+.pq__nosotros{
+  color: var(--azulOscuro);
+}
+
+.size--nosotros{
+  font-size: 80%;
+}
+
+@media (max-width: 768px) {
+    .textoFinalNosotros{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+    /*Ubicacion*/
+
+.mapa{
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+}
+.direccion{
+  text-align: center;
+  margin-top: 5rem;
+  /*margin: 2rem;*/
+  font-size: 85%;
+}
+.horarios{
+  display: block;
+  text-align: center;
+  font-size: ;
+}
+    /*Contacto*/
+
+.form{
+   background-color: var(--rojo);
+  width: min(60rem, 100%);
+    margin: 0 auto;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+  /*padding: 2rem;*/
+  border-radius: 1rem;
+}
+.formulario fieldset {
+  border: none;
+  background-image: linear-gradient(to right,var(--rojo) 0%, var(--azulOscuro) 100%);
+}
+.form legend {
+  padding-top: 8rem;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: var(--blanco);
+}
+
+.letraForm{
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.letraForm label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+.input-text{
+  width: 90%;
+  border: none;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border-style: inherit;
+    
+}
+
+.boton{
+  background-color: var(--gris);
+  color: var(--blanco);
+  padding: 1rem 3rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+.boton:hover {
+  cursor: pointer;
+}
+
+    /*Footer*/
+
+footer{
+  font-size: 2rem;
+}
+.footer{
+  text-align: center;
+  padding: 2rem;
+}
